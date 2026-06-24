@@ -110,20 +110,24 @@ async function cmdSearch(query, n) {
 
 function help() {
   console.log(`
-${bold('ai-daily-insights')} — 终端里读每日 AI 资讯  ${dim('(' + BASE + ')')}
+${blue('❯')} ${bold('AI Daily Insights')}  ${dim('每日 AI 资讯，为人与 Agent 而生')}
+${dim('──────────────────────────────────────────────')}
+欢迎！这是终端里的每日 AI 资讯工具。${dim('数据来自 ' + BASE + '，无需登录。')}
 
-${bold('用法')}
-  ai-daily-insights latest [n]        列出最近 n 期（默认 5）
-  ai-daily-insights show <日期>        显示某期全部新闻，如 2026-06-24
-  ai-daily-insights search <词> [n]   跨期检索关键词
-  ai-daily-insights help              显示本帮助
+${bold('▸ 立刻试一下')}
+  ${cyan('npx ai-daily-insights latest')}              ${dim('# 看最近 5 期')}
 
-${bold('示例')}
-  npx ai-daily-insights latest
-  npx ai-daily-insights show 2026-06-24
-  npx ai-daily-insights search Anthropic
+${bold('▸ 全部命令')}
+  ${cyan('latest')} ${dim('[n]')}           列出最近 n 期（默认 5）
+  ${cyan('show')} ${dim('<日期>')}          看某期全部新闻 + signal，如 ${dim('show 2026-06-24')}
+  ${cyan('search')} ${dim('<词> [n]')}      跨期检索关键词
+  ${cyan('help')}                  显示本帮助
 
-${dim('数据来自公开 JSON 接口，无需登录。设 AI_DAILY_BASE_URL 可指向其他部署。')}
+${bold('▸ 想让你的 AI 直接调用？')}
+  装 MCP：${cyan('claude mcp add ai-daily-insights -- npx -y ai-daily-insights-mcp')}
+
+${bold('▸ 喜欢就常用')}
+  全局安装：${cyan('npm i -g ai-daily-insights')}  之后直接敲 ${cyan('ai-daily-insights latest')}
 `);
 }
 
