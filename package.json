@@ -1,0 +1,29 @@
+{
+  "name": "ai-daily-insights",
+  "version": "0.1.0",
+  "description": "Read the AI Daily Insights briefing (aidailyinsights.cn) right in your terminal.",
+  "type": "module",
+  "bin": {
+    "ai-daily-insights": "src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "ai-news",
+    "cli",
+    "ai-daily-insights",
+    "terminal"
+  ],
+  "author": "whalecupl",
+  "license": "MIT",
+  "homepage": "https://www.aidailyinsights.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhaleCupl/ai-daily-insights-cli.git"
+  }
+}
